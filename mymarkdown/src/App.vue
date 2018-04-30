@@ -2,7 +2,7 @@
  <div id="app">
   <Home v-if="!isLogin"></Home>   
   <Editor v-if="isLogin" :user="userData"></Editor>  
-  <p>こんにちは</p>
+
 </div>
  </template>
  <script>
@@ -19,11 +19,12 @@
 },
   created: function() {
     firebase.auth().onAuthStateChanged(user => {
-      console.log(user); 
         if (user) {
           this.isLogin = true; 
+          this.userData = user; 
         } else {
           this.isLogin = false; 
+           this.userData = null; 
         };
         });
   },
@@ -36,8 +37,8 @@
  
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+#appapp {
+  font-family: serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
