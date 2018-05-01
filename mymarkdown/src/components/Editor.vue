@@ -1,6 +1,7 @@
 <template>
   <div class="editor">
     <h1>エディタ</h1>
+    
     <span>{{ user.displayName }}</span>
     <button @click="logout"> ログアウト </button>
   <div>
@@ -89,6 +90,7 @@
   border-top:1px solid #000;
 }
 .memoList{
+  word-break : break-all;
   width:300px;
   height:80px;
   max-width:200px;
