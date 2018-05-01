@@ -18,8 +18,7 @@
 </div>
 
 
-<textarea name="" class="markdown" cols="30" rows="10" v-model="memos[selectedIndex].markdown"></textarea>
-<div class="preview" v-html="preview()"></div>
+
 
 </div>
 
@@ -84,11 +83,15 @@
 <style lang="scss" scoped>
 
 .memoListWrapper{
-  width:19%;
-  float:left;
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
   border-top:1px solid #000;
 }
 .memoList{
+  width:300px;
+  height:80px;
+  max-width:200px;
   padding:10px;
   box-sizing:border-box;
   text-align:left;
