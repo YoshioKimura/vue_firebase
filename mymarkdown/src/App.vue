@@ -26,11 +26,11 @@
           this.userData = user;
         } else {
           this.isLogin = false;
-           this.userData = null; 
+          this.userData = null; 
         };
     });
   },
-  components:{   
+  components:{
     'Home': Home,   
     'Editor': Editor,
     'Admin': Admin,

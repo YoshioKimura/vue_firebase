@@ -9,7 +9,7 @@
    name: 'home',   
    data () {
       return {
-        msg:'Welcome to call'
+        msg:'Welcome to chat service'
    }
   },
   methods: {

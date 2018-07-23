@@ -1,6 +1,6 @@
 <template>
-  <div id="admin">
-    われわれアドミンである。
+  <div id="admin" class="popup-modal" @click="modal">
+      われわれアドミンである
   </div>
   
  </template>
@@ -14,7 +14,9 @@
    }
   },
   methods: {
+    modal:function(){
 
- }
+      }
+  }
  }  
  </script>

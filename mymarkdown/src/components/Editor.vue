@@ -14,13 +14,7 @@
 選択中のメモの削除</button>
 
 <button class="saveMemoBtn" @click="saveMemos">メモの保存</button>
-
-
-</div>
-
-
-
-
+  </div>
 </div>
 
 </div>
